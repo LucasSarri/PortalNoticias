@@ -1,17 +1,14 @@
 var mysql = require('mysql');
 
-var connMySQL = function(){
-	console.log('Conexão com bd foi estabelecida');
+const connMySQL = function(){
 	return mysql.createConnection({
-			host:'localhost',
-			user:'root',
-			password:'root',//
-			database:'portal_noticias'
-	});
+			host : 'localhost',
+			user : 'root',
+			password : 'root',
+			database : 'cadastro_usuarios'
+		});
 }
 
-module.exports = function(){
-	console.log('O autoload carregou o módulo de conexão com o bd');
+module.exports = function () {
 	return connMySQL;
 }
-		

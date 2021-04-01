@@ -1,10 +1,7 @@
+/* importar as configurações do servidor*/
 var app = require('./config/server');
 
-//var rotaNoticias = require('./app/routes/noticias')(app);
-//var rotaHome = require('./app/routes/home')(app);
-//var rotaFormInclusaoNoticia = require('./app/routes/formulario_inclusao_noticia')(app);
-
-app.listen(8000,function()
-{
-	console.log('Servidor ON');
+/* parametrizar a porta de escuta */
+var server = app.listen(3000, function(){
+	console.log('Servidor on');
 });

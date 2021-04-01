@@ -1,27 +1,21 @@
 {
-  "name": "portalnoticias",
+  "name": "loginsession",
   "version": "1.0.0",
-  "description": "Página feita com Node + Mysql, com todas as funções do CRUD",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LucasSarri/PortalNoticias.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LucasSarri/PortalNoticias/issues"
-  },
-  "homepage": "https://github.com/LucasSarri/PortalNoticias#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
-    "ejs": "^2.6.2",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "express-validator": "^6.1.1",
-    "mysql": "^2.17.1"
-  }
+    "express-session": "^1.17.0",
+    "express-validator": "^5.3.1",
+    "mysql": "^2.17.1",
+    "save": "^2.4.0"
+  },
+  "description": ""
 }
